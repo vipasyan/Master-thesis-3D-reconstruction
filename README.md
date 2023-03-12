@@ -8,7 +8,7 @@
 
 ### Citation
 
-If you find this repo helpful, please site below paper.
+If you find this repo helpful, please cite below paper.
 
 ```bash
   @misc{mildenhall2020nerf,
