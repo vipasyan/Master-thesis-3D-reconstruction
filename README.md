@@ -46,7 +46,7 @@ bash download_example_data.sh
 ```
 to get synthetic Lego dataset and the LLFF Fern dataset.
 
-For 200k iterations on NVIDIA GeForce RTX 3090 it took 10 hours.
+For 200k iterations, it took about 10 hours on NVIDIA GeForce RTX 3090.
 
 
 To optimize a low-res Fern NeRF:
