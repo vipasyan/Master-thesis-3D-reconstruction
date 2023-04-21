@@ -2,8 +2,8 @@ import numpy as np
 import os, imageio
 
 
-# ######### Slightly modified version of LLFF data loading code 
-# #########  see https://github.com/Fyusion/LLFF for original
+########## Slightly modified version of LLFF data loading code 
+##########  see https://github.com/Fyusion/LLFF for original
 
 def _minify(basedir, factors=[], resolutions=[]):
     needtoload = False
@@ -55,10 +55,10 @@ def _minify(basedir, factors=[], resolutions=[]):
             check_output('rm {}/*.{}'.format(imgdir, ext), shell=True)
             print('Removed duplicates')
         print('Done')
-
+            
         
-
-
+        
+        
 def _load_data(basedir, factor=None, width=None, height=None, load_imgs=True):
     
     poses_arr = np.load(os.path.join(basedir, 'poses_bounds.npy'))
@@ -118,9 +118,9 @@ def _load_data(basedir, factor=None, width=None, height=None, load_imgs=True):
     return poses, bds, imgs
 
     
-
             
-
+            
+    
 
 def normalize(x):
     return x / np.linalg.norm(x)
@@ -160,7 +160,7 @@ def render_path_spiral(c2w, up, rads, focal, zdelta, zrate, rots, N):
         z = normalize(c - np.dot(c2w[:3,:4], np.array([0,0,-focal, 1.])))
         render_poses.append(np.concatenate([viewmatrix(z, up, c), hwf], 1))
     return render_poses
-
+    
 
 
 def recenter_poses(poses):
@@ -178,7 +178,7 @@ def recenter_poses(poses):
     return poses
 
 
-# ####################
+#####################
 
 
 def spherify_poses(poses, bds):
@@ -238,7 +238,7 @@ def spherify_poses(poses, bds):
     poses_reset = np.concatenate([poses_reset[:,:3,:4], np.broadcast_to(poses[0,:3,-1:], poses_reset[:,:3,-1:].shape)], -1)
     
     return poses_reset, new_poses, bds
-
+    
 
 def load_llff_data(basedir, factor=8, recenter=True, bd_factor=.75, spherify=False, path_zflat=False):
     
