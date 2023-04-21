@@ -1,10 +1,12 @@
 # Master-thesis-3D-reconstruction
 
+In this repo TensorFlow v2.12.0 is used in comparison with the TensorFlow v1 in original repo.
 
 ## Installation
 
 To setup a conda environment, download example training data, begin the training process, and launch Tensorboard:
 ```
+
 conda env create -f environment.yml
 conda activate nerf
 bash download_example_data.sh
@@ -13,11 +15,17 @@ tensorboard --logdir=logs/summaries --port=6006
 ```
 If everything works without errors, you can now go to `localhost:6006` in your browser and watch the "Fern" scene train.
 
+You can also clone this repo by 
+```
+git clone --recursive https://github.com/vipasyan/Master-thesis-3D-reconstruction.git
+
+```
+
 ## Setup
 
 Python 3 dependencies:
 
-* Tensorflow 1.15
+* Tensorflow 2.12.0
 * matplotlib
 * numpy
 * imageio
