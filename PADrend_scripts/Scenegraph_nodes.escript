@@ -12,6 +12,9 @@ var rootNode = new MinSG.ListNode();
 rootNode.addChild(gnode1);
 rootNode.addChild(gnode2);
 
+//var surfelState = new MinSG.SurfelRenderer();
+var gnode1.addState(surfelState);
+
 //Register the root node of the scene graph
 PADrend.registerScene(rootNode);
 //Selecting the root node to be the active scene
