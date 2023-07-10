@@ -44,7 +44,7 @@ You will also need the [LLFF code](http://github.com/fyusion/llff) (and COLMAP) 
 
 ## Running code
 
-Examples to run code on two scenes is given below. You can download the rest of the synthetic and real data used in the paper [here](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1).
+Examples to run code on two scenes is given below. You can download the rest of the synthetic and real data [here](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1).
 
 ### Optimizing a NeRF
 
@@ -57,48 +57,28 @@ to get synthetic Lego dataset and the LLFF Fern dataset.
 For 200k iterations, it took about 10 hours on NVIDIA GeForce RTX 3090.
 
 
-To optimize a low-res Fern NeRF:
-```
-python run_nerf.py --config config_fern.txt
-```
-
-
 To optimize a low-res Lego NeRF:
 ```
 python run_nerf.py --config config_lego.txt
 ```
 
-Results will be uploaded later.
+
+### Data
+
+Synthetic Blender data and LLFF scenes are hosted [here](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1) and the DeepVoxels data is hosted by Vincent Sitzmann [here](https://drive.google.com/open?id=1lUvJWB6oFtT8EQ_NzBrXnmi25BufxRfl).
 
 
-### Rendering a NeRF
+### PADrend
 
-Run
-```
-bash download_example_weights.sh
-```
-to get a pretrained high-res NeRF for the Fern dataset. Now you can use [`render_demo.ipynb`](https://github.com/bmild/nerf/blob/master/render_demo.ipynb) to render new views.
+To know how to install and setup PADrend you can visit [Tutorials](https://padrend.github.io/Tutorials/index.html).
 
-### Replicating the paper results
+### OpenGL
 
-The example config files run at lower resolutions than the quantitative/qualitative results in the paper and video. To replicate the results from the paper, start with the config files in [`paper_configs/`](https://github.com/bmild/nerf/tree/master/paper_configs). Our synthetic Blender data and LLFF scenes are hosted [here](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1) and the DeepVoxels data is hosted by Vincent Sitzmann [here](https://drive.google.com/open?id=1lUvJWB6oFtT8EQ_NzBrXnmi25BufxRfl).
-
+To know how to set up OpenGL project you can visit [LearnOpenGL](https://learnopengl.com/).
 
 ### Acknowledgements
 
-This work is Adapted from [NeRF](https://github.com/bmild/nerf)
+This work is Adapted from [NeRF](https://github.com/bmild/nerf), [PADrend](https://github.com/PADrend/PADrendComplete) and [OpenGL](https://github.com/JoeyDeVries/LearnOpenGL/tree/master)
  
 
     
-### Citation
-
-If you find this repo helpful, please cite below paper.
-
-```
-@inproceedings{mildenhall2020nerf,
-  title={NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis},
-  author={Ben Mildenhall and Pratul P. Srinivasan and Matthew Tancik and Jonathan T. Barron and Ravi Ramamoorthi and Ren Ng},
-  year={2020},
-  booktitle={ECCV},
-}
-```
