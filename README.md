@@ -63,6 +63,11 @@ python run_nerf.py --config config_lego.txt
 ```
 
 
+### Generating surfels from NeRF
+
+Extracting the sufel points from NeRF with desired viewing direction is given in [`surfels.ipynb`](https://github.com/vipasyan/Master-thesis-3D-reconstruction/blob/main/NeRF_scripts/surfels.ipynb).
+
+
 ### Data
 
 Synthetic Blender data and LLFF scenes are hosted [here](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1) and the DeepVoxels data is hosted by Vincent Sitzmann [here](https://drive.google.com/open?id=1lUvJWB6oFtT8EQ_NzBrXnmi25BufxRfl).
