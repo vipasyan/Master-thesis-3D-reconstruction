@@ -1,0 +1,17 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\plugins",
+    "\\plugins\\ExampleProject",
+    "\\src",
+    "\\src\\ExampleRenderer"
+  ],
+  "SelectedNode": "\\src\\ExampleRenderer\\ExampleRenderer.cpp",
+  "PreviewInSolutionExplorer": false
+}
